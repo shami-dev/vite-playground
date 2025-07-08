@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint .",
     "prepare": "husky"
   },
   "dependencies": {
     "mongodb": "6.17",
+    "mongodb-memory-server": "^9.1.1",
     "mongoose": "^8.16.1"
   },
   "devDependencies": {
@@ -21,6 +23,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
     "husky": "^9.1.7",
+    "jest": "^30.0.4",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.2"
   },
